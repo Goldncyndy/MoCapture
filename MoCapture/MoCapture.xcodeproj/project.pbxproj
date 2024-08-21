@@ -18,6 +18,13 @@
 		CEA2880D2C7250AD00E12FDA /* MoCaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA2880C2C7250AD00E12FDA /* MoCaptureUITests.swift */; };
 		CEA2880F2C7250AD00E12FDA /* MoCaptureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA2880E2C7250AD00E12FDA /* MoCaptureUITestsLaunchTests.swift */; };
 		CEA288262C72548300E12FDA /* CaptureListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA288252C72548300E12FDA /* CaptureListViewController.swift */; };
+		CEA288282C75669E00E12FDA /* CaptureListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA288272C75669E00E12FDA /* CaptureListCollectionViewCell.swift */; };
+		CEA2882A2C75687600E12FDA /* CaptureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA288292C75687600E12FDA /* CaptureModel.swift */; };
+		CEA2882C2C7568C600E12FDA /* CaptureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA2882B2C7568C600E12FDA /* CaptureViewModel.swift */; };
+		CEA2882E2C75691700E12FDA /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA2882D2C75691700E12FDA /* EventManager.swift */; };
+		CEA288322C75870200E12FDA /* AddNewCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA288312C75870200E12FDA /* AddNewCaptureViewController.swift */; };
+		CEA288342C75871700E12FDA /* CaptureDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA288332C75871700E12FDA /* CaptureDetailsViewController.swift */; };
+		CEA288362C7587E300E12FDA /* Ext+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA288352C7587E300E12FDA /* Ext+Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		CEA2880C2C7250AD00E12FDA /* MoCaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoCaptureUITests.swift; sourceTree = "<group>"; };
 		CEA2880E2C7250AD00E12FDA /* MoCaptureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoCaptureUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CEA288252C72548300E12FDA /* CaptureListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureListViewController.swift; sourceTree = "<group>"; };
+		CEA288272C75669E00E12FDA /* CaptureListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureListCollectionViewCell.swift; sourceTree = "<group>"; };
+		CEA288292C75687600E12FDA /* CaptureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureModel.swift; sourceTree = "<group>"; };
+		CEA2882B2C7568C600E12FDA /* CaptureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewModel.swift; sourceTree = "<group>"; };
+		CEA2882D2C75691700E12FDA /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
+		CEA288312C75870200E12FDA /* AddNewCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCaptureViewController.swift; sourceTree = "<group>"; };
+		CEA288332C75871700E12FDA /* CaptureDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureDetailsViewController.swift; sourceTree = "<group>"; };
+		CEA288352C7587E300E12FDA /* Ext+Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Notifications.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +175,8 @@
 		CEA2881E2C72521C00E12FDA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				CEA2882D2C75691700E12FDA /* EventManager.swift */,
+				CEA288352C7587E300E12FDA /* Ext+Notifications.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -168,6 +184,8 @@
 		CEA2881F2C72523100E12FDA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CEA288302C75696400E12FDA /* CaptureDetailViewController */,
+				CEA2882F2C75694800E12FDA /* AddNewCapturViewController */,
 				CEA288242C72545700E12FDA /* CaptureList */,
 				CEA288232C7252CC00E12FDA /* OnboardingScene */,
 			);
@@ -177,6 +195,7 @@
 		CEA288202C72523B00E12FDA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CEA2882B2C7568C600E12FDA /* CaptureViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -184,6 +203,7 @@
 		CEA288212C72524B00E12FDA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CEA288292C75687600E12FDA /* CaptureModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,8 +229,25 @@
 			isa = PBXGroup;
 			children = (
 				CEA288252C72548300E12FDA /* CaptureListViewController.swift */,
+				CEA288272C75669E00E12FDA /* CaptureListCollectionViewCell.swift */,
 			);
 			path = CaptureList;
+			sourceTree = "<group>";
+		};
+		CEA2882F2C75694800E12FDA /* AddNewCapturViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEA288312C75870200E12FDA /* AddNewCaptureViewController.swift */,
+			);
+			path = AddNewCapturViewController;
+			sourceTree = "<group>";
+		};
+		CEA288302C75696400E12FDA /* CaptureDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEA288332C75871700E12FDA /* CaptureDetailsViewController.swift */,
+			);
+			path = CaptureDetailViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,9 +381,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA2882E2C75691700E12FDA /* EventManager.swift in Sources */,
 				CEA287ED2C7250A800E12FDA /* OnboardingViewController.swift in Sources */,
+				CEA288342C75871700E12FDA /* CaptureDetailsViewController.swift in Sources */,
+				CEA2882C2C7568C600E12FDA /* CaptureViewModel.swift in Sources */,
 				CEA287E92C7250A800E12FDA /* AppDelegate.swift in Sources */,
 				CEA287F32C7250A800E12FDA /* MoCapture.xcdatamodeld in Sources */,
+				CEA2882A2C75687600E12FDA /* CaptureModel.swift in Sources */,
+				CEA288322C75870200E12FDA /* AddNewCaptureViewController.swift in Sources */,
+				CEA288362C7587E300E12FDA /* Ext+Notifications.swift in Sources */,
+				CEA288282C75669E00E12FDA /* CaptureListCollectionViewCell.swift in Sources */,
 				CEA288262C72548300E12FDA /* CaptureListViewController.swift in Sources */,
 				CEA287EB2C7250A800E12FDA /* SceneDelegate.swift in Sources */,
 			);

@@ -38,7 +38,7 @@ class OnboardingViewController: UIViewController {
         
         // Page Title Label Setup
         pageTitleLabel.font = UIFont.systemFont(ofSize: 26, weight: .bold)
-        pageTitleLabel.textColor = .systemPink
+        pageTitleLabel.textColor = .white
         pageTitleLabel.textAlignment = .center
         pageTitleLabel.text = "MO-CAPTURE"
         pageTitleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -47,7 +47,7 @@ class OnboardingViewController: UIViewController {
         // Title Label Setup
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.text = "MoCapture App is a fun application that captures images with a mustache"
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 24)
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 21)
         titleLabel.textAlignment = .center
         titleLabel.textColor = .white
         titleLabel.numberOfLines = 0
@@ -55,7 +55,7 @@ class OnboardingViewController: UIViewController {
 
         // Description Label Setup
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
-        descriptionLabel.text = "Have fun"
+        descriptionLabel.text = "Have fun!"
         descriptionLabel.font = UIFont.systemFont(ofSize: 16)
         descriptionLabel.textAlignment = .center
         descriptionLabel.textColor = .white
@@ -98,7 +98,7 @@ class OnboardingViewController: UIViewController {
             titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
 
             // Description Label Constraints
-            descriptionLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -70),
+            descriptionLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -90),
             descriptionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             descriptionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             
